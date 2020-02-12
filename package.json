@@ -1,0 +1,44 @@
+{
+  "name": "simple-dist-tag",
+  "version": "1.0.0",
+  "description": "A simple tool for selecting a dist tag for npm publish.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint '**/*.js'",
+    "posttest": "npm run lint",
+    "version": "npm run test && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "npm publish --tag `./bin/simple-dist-tag`",
+    "postpublish": "git push origin --follow-tags"
+  },
+  "author": "Louis-Dominique <ldd@lddubeau.com>",
+  "repository": "https://github.com/lemur-lake-software/simple-dist-tag.git",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-angular": "^8.3.4",
+    "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.0.31",
+    "eslint": "^6.8.0",
+    "eslint-config-lddubeau-base": "^5.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-simple-import-sort": "^5.0.1",
+    "expect-rejection": "^2.0.0",
+    "husky": "^4.2.2",
+    "mocha": "^7.0.1",
+    "mock-fs": "^4.10.4",
+    "nock": "^11.8.2"
+  },
+  "dependencies": {
+    "semver": "^7.1.3",
+    "superagent": "^5.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
