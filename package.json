@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A simple tool for selecting a dist tag for npm publish.",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "mocha",
     "lint": "eslint '**/*.js'",
