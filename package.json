@@ -35,7 +35,7 @@
     "husky": "^4.2.3",
     "mocha": "^7.1.0",
     "mock-fs": "^4.10.4",
-    "nock": "^11.8.2"
+    "nock": "^11.9.1"
   },
   "dependencies": {
     "semver": "^7.1.3",
