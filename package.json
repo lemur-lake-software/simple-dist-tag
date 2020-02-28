@@ -4,8 +4,10 @@
   "description": "A simple tool for selecting a dist tag for npm publish.",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "bin/**"
   ],
+  "bin": "./bin/simple-dist-tag",
   "scripts": {
     "test": "mocha",
     "lint": "eslint '**/*.js'",
