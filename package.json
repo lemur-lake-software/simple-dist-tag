@@ -20,7 +20,7 @@
   "repository": "https://github.com/lemur-lake-software/simple-dist-tag.git",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
+    "@commitlint/cli": "^9.0.0",
     "@commitlint/config-angular": "^8.3.4",
     "chai": "^4.3.3",
     "conventional-changelog-cli": "^2.1.1",
