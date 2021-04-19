@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "semver": "^7.3.5",
-    "superagent": "^5.3.0"
+    "superagent": "^5.3.1"
   },
   "husky": {
     "hooks": {
